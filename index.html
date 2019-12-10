@@ -28,9 +28,6 @@
                 <a href="#about">About</a>
             </li>
             <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
                 <a href="#education">Education</a>
             </li>
             <li>
@@ -38,6 +35,9 @@
             </li>
             <li>
                 <a href="#publications">Publications</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
             </li>
             <li>
                 <a href="#skills">Skills</a>
@@ -126,71 +126,6 @@
         </div>
     </div>
     <!-- End #education -->
-
-    <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
-        <div id="experience-timeline">
-            <div data-date="August 2014 – July 2015">
-                <h3>Freelance Software Developer</h3>
-                <p>
-                    Maintained LibreOffice Calc (C++) by fixing bugs and adding few enhancements. Following are the links to my accepted patches.
-                    <ul>
-                        <li>
-                            <a href="https://cgit.freedesktop.org/libreoffice/core/commit/?id=3d318e6cf4a183e14a043840b9990958c7527536" target="_blank"> Add --cat parameter to make git diffs pretty
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://cgit.freedesktop.org/libreoffice/core/commit/?id=c25ac84688b596b9990d382d550f0514161b78c2" target="_blank"> Resolves fdo#81084 fdo#81696 fdo#80874 fdo#81010 : sort causes crash
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://cgit.freedesktop.org/libreoffice/core/commit/?id=51eeb1424f2034708cc6e1ab1a4a771ce5586211" target="_blank">
-                            Resolved the bug ‘When selecting (highlighting) cells with numbers, SUM/AVERAGE/... in status-
-                            bar is calculated only after mouse button release’. This fix is included in LibreOffice 4.4.
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://cgit.freedesktop.org/libreoffice/core/commit/?id=726430db96434f64037af719ad649ab109add5d1" target="_blank">
-                            Added a feature ‘Autofilter checkbox for blank cells like in MS Excel'.
-                            </a>
-                        </li>
-                        <li><a href="https://cgit.freedesktop.org/libreoffice/core/commit/?id=7b355da6853af6678c4ba22710d157cf8a6d43eb" target="_blank">
-                            Added a feature ‘Repeat item labels on a pivot table'.
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://cgit.freedesktop.org/libreoffice/core/commit/?id=f340278df616921c663075be692264ca37d86d84" target="_blank">
-                            Added a feature ‘Search field to the Autofilter’.
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://cgit.freedesktop.org/libreoffice/core/commit/?id=5c793b582e5afda68bb6acf7aa22f70c48f59b12" target="_blank">
-                            Resolved the bug ‘Red squiggly underline does not appear instantly’.
-                            </a>
-                        </li>
-                    </ul>
-                </p>
-            </div>
-
-            <!--- <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
-            </div>
-
-            <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
-            -->
-            </div>
-        </div>
-    </div>
-    <!-- End #experience -->
 
     <div id="projects" class="background-alt">
         <h2 class="heading">Projects</h2>
@@ -338,43 +273,59 @@
     <!-- End #projects -->
 
     <div id="publications" class="background-alt">
-            <h2 class="heading">Publications</h2>
-            <div class="container">
-                <div class="row">
-                    <div class="project shadow-large">
+        <h2 class="heading">Publications</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/pub_cover.png" width="300" height="300"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>An improvement of the parameterized frequent directions algorithm</h3>
+                        <p>
+                            In this paper, we present a matrix sketching algorithm called βFD. It overcome the limitations of previous algorithms, while maintaining good error guarantees.
+                            Empirical results on datasets with sudden and major drift and those with gradual and minor or no drift indicate that there is a trade-off between the errors in both kinds of data for different parameter values, and for β≈28 , our algorithm has overall better error performance than previous algorithms.
+                        </p>
+                        <a href="https://link.springer.com/article/10.1007/s10618-017-0542-x" target="_blank">View Paper</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/pub_cover.png" width="300" height="300"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>A fast and accurate explicit kernel map </h3>
+                        <p>
+                            A fast, exact and explicit kernel map called Explicit Cosine Map (ECM) is proposed.
+                            The advantage of this exact map is manifested in the form of performance improvements in kernel based algorithms.
+                            Furthermore, its explicit nature enables it to be used in streaming applications. Another explicit kernel map called Euler kernel map is also proposed. The effectiveness of both kernel maps is evaluated in the application of streaming Anomaly Detection (AD).
+                            The AD results indicate that ECM based algorithm achieves better AD accuracy than previous algorithms, while being faster.
+                        </p>
+                        <a href="https://link.springer.com/article/10.1007/s10489-019-01538-w" target="_blank">View Paper</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+                <div class="project shadow-large">
                         <div class="project-image">
                             <img src="images/pub_cover.png" width="300" height="300"/>
                         </div>
                         <!-- End .project-image -->
                         <div class="project-info">
-                            <h3>An improvement of the parameterized frequent directions algorithm</h3>
+                            <h3>
+                                A practical streaming approximate matrix multiplication algorithm  </h3>
                             <p>
-                                In this paper, we present a matrix sketching algorithm called βFD. It overcome the limitations of previous algorithms, while maintaining good error guarantees.
-                                Empirical results on datasets with sudden and major drift and those with gradual and minor or no drift indicate that there is a trade-off between the errors in both kinds of data for different parameter values, and for β≈28 , our algorithm has overall better error performance than previous algorithms.
+                                    We propose an algorithm that is more accurate, robust to noise, invariant to concept drift in the data, while having almost the same running time as the state-of-the-art algorithm. We also prove that theoretical guarantees exist for the proposed algorithm.
+                                    An empirical performance improvement of up to 90% is obtained over the previous algorithm.
                             </p>
-                            <a href="https://link.springer.com/article/10.1007/s10618-017-0542-x" target="_blank">View Paper</a>
+                            <a href="https://www.sciencedirect.com/science/article/pii/S1319157818306396" target="_blank">View Paper</a>
                         </div>
                         <!-- End .project-info -->
                     </div>
-                    <!-- End .project -->
-                    <div class="project shadow-large">
-                        <div class="project-image">
-                            <img src="images/pub_cover.png" width="300" height="300"/>
-                        </div>
-                        <!-- End .project-image -->
-                        <div class="project-info">
-                            <h3>A fast and accurate explicit kernel map </h3>
-                            <p>
-                                A fast, exact and explicit kernel map called Explicit Cosine Map (ECM) is proposed.
-                                The advantage of this exact map is manifested in the form of performance improvements in kernel based algorithms.
-                                Furthermore, its explicit nature enables it to be used in streaming applications. Another explicit kernel map called Euler kernel map is also proposed. The effectiveness of both kernel maps is evaluated in the application of streaming Anomaly Detection (AD).
-                                The AD results indicate that ECM based algorithm achieves better AD accuracy than previous algorithms, while being faster.
-                            </p>
-                            <a href="https://link.springer.com/article/10.1007/s10489-019-01538-w" target="_blank">View Paper</a>
-                        </div>
-                        <!-- End .project-info -->
-                    </div>
-                    <!-- End .project -->
                     <div class="project shadow-large">
                             <div class="project-image">
                                 <img src="images/pub_cover.png" width="300" height="300"/>
@@ -382,63 +333,112 @@
                             <!-- End .project-image -->
                             <div class="project-info">
                                 <h3>
-                                    A practical streaming approximate matrix multiplication algorithm  </h3>
+                                A Random Fourier Features based Streaming Algorithm for Anomaly Detection in Large Datasets</h3>
                                 <p>
-                                        We propose an algorithm that is more accurate, robust to noise, invariant to concept drift in the data, while having almost the same running time as the state-of-the-art algorithm. We also prove that theoretical guarantees exist for the proposed algorithm.
-                                        An empirical performance improvement of up to 90% is obtained over the previous algorithm.
+                                        Anomaly detection is an important problem in real-world applications.
+                                        It is particularly challenging in the streaming data setting where it is infeasible to store the entire data in order to apply some algorithm.
+                                        In this work, a kernel-based anomaly detection method is proposed which transforms the data to the kernel space using random Fourier features (RFF).
+                                        When compared to the previous methods, the proposed approach attains significant empirical performance improvement in datasets with large number of examples
                                 </p>
-                                <a href="https://www.sciencedirect.com/science/article/pii/S1319157818306396" target="_blank">View Paper</a>
+                                <a href="https://link.springer.com/chapter/10.1007/978-981-10-7200-0_18" target="_blank">View Paper</a>
                             </div>
                             <!-- End .project-info -->
                         </div>
-                        <div class="project shadow-large">
-                                <div class="project-image">
-                                    <img src="images/pub_cover.png" width="300" height="300"/>
-                                </div>
-                                <!-- End .project-image -->
-                                <div class="project-info">
-                                    <h3>
-                                    A Random Fourier Features based Streaming Algorithm for Anomaly Detection in Large Datasets</h3>
-                                    <p>
-                                            Anomaly detection is an important problem in real-world applications.
-                                            It is particularly challenging in the streaming data setting where it is infeasible to store the entire data in order to apply some algorithm.
-                                            In this work, a kernel-based anomaly detection method is proposed which transforms the data to the kernel space using random Fourier features (RFF).
-                                            When compared to the previous methods, the proposed approach attains significant empirical performance improvement in datasets with large number of examples
-                                    </p>
-                                    <a href="https://link.springer.com/chapter/10.1007/978-981-10-7200-0_18" target="_blank">View Paper</a>
-                                </div>
-                                <!-- End .project-info -->
-                            </div>
-                        <!-- End .project -->
-                        <!--
-                        <a id="view-more-projects" href="#">View More Papers</a>
-                        <div id="more-projects" class="row">-->
-                        <div class="project shadow-large">
-                            <div class="project-image">
-                                <img src="images/pub_cover.png" width="300"/>
-                            </div>
-                                <!-- End .project-image -->
-                            <div class="project-info">
-                                <h3>
-                                    Empirical Evaluation of Kernel PCA Approximation Methods in Classification Tasks
-                                </h3>
-                                <p>
-                                            Kernel Principal Component Analysis (KPCA) is a popular dimensionality reduction technique with a wide range of applications.
-                                            Various approximation methods have been proposed in the past to overcome this problem.
-                                            The Nyström method, Randomized Nonlinear Component Analysis (RNCA) and Streaming Kernel Principal Component Analysis (SKPCA) were proposed to deal with the scalability issue of KPCA.
-                                            In this work the evaluation of SKPCA, RNCA and Nyström method for the task of classification is done for several real world datasets.
-                                            The results obtained indicate that SKPCA based features gave much better classification accuracy when compared to the other methods for a very large dataset.
-                                </p>
-                                <a href="https://arxiv.org/abs/1712.04196" target="_blank">View Paper</a>
-                            </div>
-                            <!-- End .project-info -->
+                    <!-- End .project -->
+                    <!--
+                    <a id="view-more-projects" href="#">View More Papers</a>
+                    <div id="more-projects" class="row">-->
+                    <div class="project shadow-large">
+                        <div class="project-image">
+                            <img src="images/pub_cover.png" width="300"/>
                         </div>
-                        <!-- End .project -->
+                            <!-- End .project-image -->
+                        <div class="project-info">
+                            <h3>
+                                Empirical Evaluation of Kernel PCA Approximation Methods in Classification Tasks
+                            </h3>
+                            <p>
+                                        Kernel Principal Component Analysis (KPCA) is a popular dimensionality reduction technique with a wide range of applications.
+                                        Various approximation methods have been proposed in the past to overcome this problem.
+                                        The Nyström method, Randomized Nonlinear Component Analysis (RNCA) and Streaming Kernel Principal Component Analysis (SKPCA) were proposed to deal with the scalability issue of KPCA.
+                                        In this work the evaluation of SKPCA, RNCA and Nyström method for the task of classification is done for several real world datasets.
+                                        The results obtained indicate that SKPCA based features gave much better classification accuracy when compared to the other methods for a very large dataset.
+                            </p>
+                            <a href="https://arxiv.org/abs/1712.04196" target="_blank">View Paper</a>
+                        </div>
+                        <!-- End .project-info -->
+                    </div>
+                    <!-- End .project -->
 
-                </div>
             </div>
         </div>
-        <!-- End #projects -->
+    </div>
+    <!-- End #projects -->
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="August 2014 – July 2015">
+                <h3>Freelance Software Developer</h3>
+                <p>
+                    Maintained LibreOffice Calc (C++) by fixing bugs and adding few enhancements. Following are the links to my accepted patches.
+                    <ul>
+                        <li>
+                            <a href="https://cgit.freedesktop.org/libreoffice/core/commit/?id=3d318e6cf4a183e14a043840b9990958c7527536" target="_blank"> Add --cat parameter to make git diffs pretty
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://cgit.freedesktop.org/libreoffice/core/commit/?id=c25ac84688b596b9990d382d550f0514161b78c2" target="_blank"> Resolves fdo#81084 fdo#81696 fdo#80874 fdo#81010 : sort causes crash
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://cgit.freedesktop.org/libreoffice/core/commit/?id=51eeb1424f2034708cc6e1ab1a4a771ce5586211" target="_blank">
+                            Resolved the bug ‘When selecting (highlighting) cells with numbers, SUM/AVERAGE/... in status-
+                            bar is calculated only after mouse button release’. This fix is included in LibreOffice 4.4.
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://cgit.freedesktop.org/libreoffice/core/commit/?id=726430db96434f64037af719ad649ab109add5d1" target="_blank">
+                            Added a feature ‘Autofilter checkbox for blank cells like in MS Excel'.
+                            </a>
+                        </li>
+                        <li><a href="https://cgit.freedesktop.org/libreoffice/core/commit/?id=7b355da6853af6678c4ba22710d157cf8a6d43eb" target="_blank">
+                            Added a feature ‘Repeat item labels on a pivot table'.
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://cgit.freedesktop.org/libreoffice/core/commit/?id=f340278df616921c663075be692264ca37d86d84" target="_blank">
+                            Added a feature ‘Search field to the Autofilter’.
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://cgit.freedesktop.org/libreoffice/core/commit/?id=5c793b582e5afda68bb6acf7aa22f70c48f59b12" target="_blank">
+                            Resolved the bug ‘Red squiggly underline does not appear instantly’.
+                            </a>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+
+            <!--- <div data-date="September 2015 – September 2016">
+                <h3>Employer Name</h3>
+                <h4>Job Title</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                </p>
+            </div>
+
+            <div data-date="September 2015 – September 2016">
+                <h3>Employer Name</h3>
+                <h4>Job Title</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                </p>
+            -->
+            </div>
+        </div>
+    </div>
+    <!-- End #experience -->
 
     <div id="skills">
         <h2 class="heading">Skills</h2>

@@ -588,7 +588,7 @@ footer {
     position: relative;
     margin: 0;
     padding: 30px 15px;
-    transform: none
+    transform: none;
 }
 
 #more-projects {
@@ -847,7 +847,9 @@ footer {
         margin: 0;
         padding: 30px 15px;
         top: auto;
-        transform: none
+        transform: none;
+        width: 100%;
+        text-align: center;
     }
     footer {
         text-align: center

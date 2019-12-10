@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Streaming Kernel Principal Component Analysis (SKPCA)</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+<body>
+
+        <a href="index.html"> Home</a>
+
+        <!-- End header -->
+
+        <div>
+            <h2 class="heading"></h2>
+            <div>
+            <h3>Streaming Kernel Principal Component Analysis (SKPCA)</h3>
+            <p>
+                In this work, a new explicit kernel map called Explicit Cosine Map was proposed.
+                By combining this kernel and the βFD algorithm, a fast and accurate SKPCA algorithm was developed.
+                It was demonstrated to be more accurate than other previous algorithms in practice.
+
+            <ul>
+                <li>
+                Dataset: PeMS, MNIST, ISOLET, HAR
+                </li>
+                <li>
+                    Implementation done in: Python, Matlab
+                </li>
+                <li>
+                    Software packages used: Scikit-learn, numpy
+                </li>
+                <li>
+                Preliminary experiments: In this work, various approximate kernel PCA (KPCA) methods such as the Nyström method, randomized nonlinear components analysis,
+                and random Fourier features (RFF) base streaming KPCA are used as feature extraction methods. The obtained features are then
+                used for classification tasks. A comparison of classification accuracy is done in order to determine the best approximate KPCA algorithm.
+                <a href="https://arxiv.org/pdf/1712.04196.pdf" target="_blank">Paper</a>
+                </li>
+            </u>
+            <br>
+            <figure>
+                    <figcaption><b>Flowchart of methodology:</b></figcaption>
+                    <img src="images/skpca_algorithm.png" width="700" height="500"/>
+            </figure>
+            </p>
+            </div>
+        </div>
+
+    <!-- End footer -->
+</body>
+</html>

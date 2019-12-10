@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Land cover change detection</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+<body>
+
+        <a href="index.html"> Home</a>
+
+        <!-- End header -->
+
+        <div>
+            <h2 class="heading"></h2>
+            <div>
+            <h3> Land cover change detection </h3>
+            <p>
+                    A land cover change detection algorithm called <a href="http://cucis.ece.northwestern.edu/projects/DMS/publications/BoriahBKSPK2008.pdf" target="_blank"> recursive merge</a> was used to analyze 1 km monthly Enhanced
+                    Vegetation Index (EVI) dataset obtained from NASA. OpenCV (C++) was used to work with
+                    the dataset. A noise reduction technique based on a statistical hypothesis test was applied on the
+                    dataset prior to the application of recursive merge algorithm.
+            <ul>
+                <li>
+                Dataset: <a href="https://modis.gsfc.nasa.gov/data/dataprod/mod13.php" target="_blank">MODIS EVI</a>
+                </li>
+                <li>
+                    Implementation done in: C++
+                </li>
+                <li>
+                Software package used: OpenCV, QT
+                </li>
+            </u>
+            <br>
+            <br>
+            <figure>
+                    <figcaption><b>Methodology:</b></figcaption>
+                    <img src="images/lccd_algorithm.png" width="710" height="300"/>
+            </figure>
+            </p>
+            </div>
+        </div>
+
+    <!-- End footer -->
+</body>
+</html>

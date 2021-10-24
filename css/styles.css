@@ -869,6 +869,18 @@ footer {
     overflow: hidden;
 }
 
+.abstract-complete {
+    display: block;
+    position: fixed;
+    padding: 15px 15px 15px 15px;
+    background-color: white;
+    box-shadow: 2px 2px 5px 2px gray;
+}
+
+.abstract-none {
+    display: none;
+}
+
 @media only screen and (max-width: 480px) {
     #lead-content h1 {
         font-size: 1.5em

@@ -10,6 +10,9 @@
     portfolio website.
 */
 
+/** @type HTMLDivElement */
+let abstractPreview = null;
+
 (function($) {
 
     // Remove no-js class
@@ -93,5 +96,27 @@
             $('#more-projects').fadeIn(300);
         });
     });
+
+    // Show abstractPreview preview of abstract text on mouse hover.
+    abstractPreview = document.getElementById('fullAbstract');
+    document.body.appendChild(abstractPreview);
+    const absList = document.getElementsByClassName('abstract');
+    for (let i = 0; i < absList.length; ++i) {
+        const abs = absList[i];
+        abs.addEventListener('mouseenter', function (event) {
+            const rect = event.target.getBoundingClientRect();
+            abstractPreview.classList.replace('abstract-none', 'abstract-complete');
+            abstractPreview.style.top = rect.bottom + 'px';
+            abstractPreview.style.left = rect.left + 'px';
+            abstractPreview.style.width = rect.width + 'px';
+            abstractPreview.textContent = event.target.textContent;
+        });
+
+        abs.addEventListener('mouseleave', function () {
+            if (abstractPreview) {
+                abstractPreview.classList.replace('abstract-complete', 'abstract-none');
+            }
+        });
+    }
 
 })(jQuery);

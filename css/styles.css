@@ -867,11 +867,13 @@ footer {
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    text-align: justify;
 }
 
 .abstract-complete {
     display: block;
     position: fixed;
+    text-align: justify;
     padding: 15px 15px 15px 15px;
     background-color: white;
     box-shadow: 2px 2px 5px 2px gray;

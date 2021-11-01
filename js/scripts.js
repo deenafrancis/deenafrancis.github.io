@@ -106,16 +106,15 @@ let abstractPreview = null;
         abs.addEventListener('mouseenter', function (event) {
             const rect = event.target.getBoundingClientRect();
             abstractPreview.classList.replace('abstract-none', 'abstract-complete');
-            abstractPreview.style.top = rect.bottom + 'px';
+            abstractPreview.style.top = rect.top + 'px';
             abstractPreview.style.left = rect.left + 'px';
             abstractPreview.style.width = rect.width + 'px';
             abstractPreview.textContent = event.target.textContent;
-        });
-
-        abs.addEventListener('mouseleave', function () {
-            if (abstractPreview) {
-                abstractPreview.classList.replace('abstract-complete', 'abstract-none');
-            }
+            abstractPreview.addEventListener('mouseleave', function () {
+                if (abstractPreview) {
+                    abstractPreview.classList.replace('abstract-complete', 'abstract-none');
+                }
+            });
         });
     }
 

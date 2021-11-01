@@ -115,6 +115,12 @@ let abstractPreview = null;
                     abstractPreview.classList.replace('abstract-complete', 'abstract-none');
                 }
             });
+
+            abstractPreview.addEventListener('wheel', function () {
+                if (abstractPreview) {
+                    abstractPreview.classList.replace('abstract-complete', 'abstract-none');
+                }
+            });
         });
     }
 

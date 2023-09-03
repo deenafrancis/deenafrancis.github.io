@@ -802,7 +802,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 960px) {
     header {
         position: fixed;
         display: none;
